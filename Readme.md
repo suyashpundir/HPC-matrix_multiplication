@@ -17,12 +17,13 @@
    ```bash
    sudo apt install g++
 
- # Compile the sequential code:  
+ # Compile the sequential code: 
+ '''bash 
 2.g++ src/matrix_mul.cpp -o matrix_mul_seq -O2
 ./matrix_mul
 # compile the openMP parallel version:
 g++ src/matrix_mul_omp.cpp -o matrix_mul_omp -fopenmp -O2
-./matrix_mul_omp > data/benchmark_results.csv
+./matrix_mul_omp > data/results.csv
 
 # Results-> ![1](plots/speedup.png),![2](plots/time_vs_size.png)
 # Future scope for V1:
