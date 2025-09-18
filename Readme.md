@@ -18,7 +18,7 @@
    sudo apt install g++
 
  # Compile the sequential code: 
- '''bash 
+ 
 2.g++ src/matrix_mul.cpp -o matrix_mul_seq -O2
 ./matrix_mul
 # compile the openMP parallel version:
